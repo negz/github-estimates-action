@@ -7,16 +7,17 @@ branding:
   
 inputs:
   token:
-    description: 'GitHub repository token ($GITHUB_TOKEN)'
+    description: 'GitHub repository token ($GITHUB_TOKEN).'
     required: true
   owner:
-    description: 'GitHub user or organisation'
+    description: 'GitHub user or organisation.'
     required: true
   repo:
-    description: 'GitHub repository name'
-    required: true
+    description: 'GitHub repository name. Leave unset to update only user or organisation scoped projects.'
+    required: false
+    default: ""
   prefix:
-    description: 'Story point label prefix'
+    description: 'Story point label prefix - for example "points/".'
     required: false
     default: ""
 runs:

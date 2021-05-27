@@ -16,7 +16,7 @@ Project **must** have one or more labels with a description named "Story Point" 
 
 - `token` **(required)** GitHub repository token (`$GITHUB_TOKEN`)
 - `owner` **(required)** GitHub user or organisation.
-- `repo` **(required)** GitHub repository name.
+- `repo` GitHub repository name. Leave unset to operate only on user or organisation projects.
 - `prefix` Aggregate labels that start with this prefix, like `points/3` instead of labels described as "Story Points".
 
 ## Usage
